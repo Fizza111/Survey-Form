@@ -1,0 +1,13 @@
+div{
+    display: flex;
+    margin-left: 5px;
+    
+    }
+label{
+     margin-top: 10px; }
+body{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: rgb(102, 194, 194);
+ }

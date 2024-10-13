@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" link="css">
+    <style>
+      
+       input{
+        margin-left: 5px;
+        margin-bottom: 10px;
+        width:50%;
+       }
+       textarea{
+        margin: 5px;
+       }
+       select{
+        margin: 5px;
+       }
+      
+       #button{
+        width: 50%;
+        height: 30px;
+        margin-top: 20px;
+        background-color: blue;
+        color:white;
+       }
+       p{
+        font-weight: bold;
+        margin-right: 15px;
+        margin-left: 20px;
+       }
+       form{
+        background-color: rgb(222, 228, 230);
+        width: 50%;
+        border-radius: 25px;
+        height: 50%;
+        
+       }
+       #file{
+        margin-left: 80px;
+        margin-top: 20px;
+       }
+       .special{
+        margin-left: 180px;
+        height: 30px;
+       }
+       
+    </style>
+</head>
+<body>
+    
+    <form>
+        
+       <center><h1 style="color:blue" >Survey Form</h1></center> 
+        <div>
+        <p>Enter your name</p>
+        <input placeholder="name" type="text">
+        </div>
+        <div>
+            <p>Enter your date of birth</p>
+            <input title="dob" type="date">
+        </div>
+        <div>
+            <p>Enter your Email</p>
+            <input placeholder="Email" type="text" type="email">
+        </div>
+        <div>
+            <p>Enter your password</p>
+            <input type="password" title="password" placeholder="password first letter then digits" pattern="[a-z]{1,20}">
+        </div>
+        <div>
+            <p>Choose your subject</p>
+           <div><input type="checkbox" title="biology" name="biology"><label>Biology</label></div>
+           <div> <input type="checkbox" title="math" name="math"><label>Math</label></div>
+           <div> <input type="checkbox" title="cs" name="cs"><label>CS</label></div>
+           <div>  <input type="checkbox" title="english" name="english"><label>English</label></div>
+        </div>
+        <div>
+            <p >Select your gender</p>
+           <div><input type="radio" title="M" name="radio" id="op1"><label>Male</label></div>
+           <div><input type="radio" title="F" name="radio" id="op2"><label>Female</label></div>
+        </div>
+        <div>
+            <p>Language you are intrested in</p>
+            <select title="language">
+                <option>Java</option>
+                <option>C#</option>
+                <option>Python</option>
+                <option>JavaScript</option>
+            </select>
+        </div>
+        <div>
+         <p>Your Permanant Address</p>   
+        <textarea title="text" cols="30" rows="5"></textarea>
+       </div>
+       <div>
+        <p>Attach your CV</p>
+        <input type="file" title="CV" id="file">
+       </div>
+       <div>
+        <input type="text" title="example" placeholder="We are from UAF readonly" readonly class="special">
+
+       </div>
+       <div>
+        <input type="text" placeholder="it is the example of disabled input" title="example" disabled class="special">
+       </div>
+      
+       <div>
+        <p>What is your favourite color</p>
+        <input title="color" list="colors" >
+           <datalist id="colors">
+             <option>Red</option>
+             <option>Blue</option>
+             <option>Green</option>
+             <option>Black</option>
+
+           </datalist>
+       </div>
+        <center><input type="submit" value="Submit" id="button"></center>
+        
+    
+    </form>
+
+    
+</body>
+</html>
